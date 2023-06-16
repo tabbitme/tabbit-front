@@ -6,6 +6,7 @@
     "source.fixAll.stylelint": true, //保存するたびにStyleLint実行
     "source.addMissingImports": true
   },
+  "prettier.prettierPath": "./node_modules/prettier",
   "stylelint.validate": ["css", "scss"], //styleLintはcssとscssファイルのみ
   //↓VSCodeデフォルトのフォーマットは無効
   "css.validate": false,
