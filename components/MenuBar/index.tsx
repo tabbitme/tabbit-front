@@ -1,4 +1,7 @@
+import Link from 'next/link';
 import { FC } from 'react';
+
+import { TicketModal } from '../TicketModal';
 
 export const MenuBar: FC = () => {
   return (
@@ -12,10 +15,12 @@ export const MenuBar: FC = () => {
         <div className='flex-none'>
           <ul className='menu menu-horizontal px-1'>
             <li>
-              <a>マイページ</a>
+              <Link href='/company-mypage'>マイページ</Link>
             </li>
             <li>
-              <a>チケット作成</a>
+              <div onClick={() => window.my_modal_2.showModal()}>
+                チケット作成
+              </div>
             </li>
             <li>
               <a>Wallet Connect</a>
@@ -33,6 +38,7 @@ export const MenuBar: FC = () => {
           className='w-full'
         />
       </div>
+      <TicketModal />
     </div>
   );
 };
