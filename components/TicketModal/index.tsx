@@ -1,13 +1,12 @@
 export const TicketModal = () => {
   return (
-    <dialog className='modal'>
-      <form method='dialog' className='modal-box w-11/12 max-w-5xl'>
+    <dialog id='my_modal_2' className='modal'>
+      <form method='dialog' className='modal-box'>
         <h3 className='text-lg font-bold'>Hello!</h3>
-        <p className='py-4'>Click the button below to close</p>
-        <div className='modal-action'>
-          {/* if there is a button, it will close the modal */}
-          <button className='btn'>Close</button>
-        </div>
+        <p className='py-4'>Press ESC key or click outside to close</p>
+      </form>
+      <form method='dialog' className='modal-backdrop'>
+        <button>close</button>
       </form>
     </dialog>
   );

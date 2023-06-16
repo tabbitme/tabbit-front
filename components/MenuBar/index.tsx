@@ -1,5 +1,7 @@
 import { FC } from 'react';
 
+import { TicketModal } from '../TicketModal';
+
 export const MenuBar: FC = () => {
   return (
     <div>
@@ -15,7 +17,9 @@ export const MenuBar: FC = () => {
               <a>マイページ</a>
             </li>
             <li>
-              <a>チケット作成</a>
+              <div onClick={() => window.my_modal_2.showModal()}>
+                チケット作成
+              </div>
             </li>
             <li>
               <a>Wallet Connect</a>
@@ -33,6 +37,7 @@ export const MenuBar: FC = () => {
           className='w-full'
         />
       </div>
+      <TicketModal />
     </div>
   );
 };
