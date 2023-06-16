@@ -1,5 +1,7 @@
+import { MenuBar } from '../../components/MenuBar';
+
 const CompanyTop: NextPage = () => {
-  return <div>aaa</div>;
+  return <MenuBar />;
 };
 
 export default CompanyTop;
