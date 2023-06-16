@@ -23,14 +23,14 @@ export const MenuBar: FC = () => {
           </ul>
         </div>
       </div>
-      <div className='max-h-80 w-screen'>
+      <div className=' w-screen'>
         {/*  eslint-disable-next-line @next/next/no-img-element */}
         <img
           src='/hero-img.png'
           fill={true}
           objectFit='contain'
           alt='hero'
-          className='relative'
+          className='w-full'
         />
       </div>
     </div>
