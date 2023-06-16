@@ -5,7 +5,15 @@ const CompanyTop: NextPage = () => {
   return (
     <>
       <MenuBar />
-      <Card />
+      <div className='m-auto grid w-4/5 grid-cols-3 gap-4'>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </>
   );
 };
