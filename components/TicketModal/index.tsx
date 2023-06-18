@@ -17,14 +17,6 @@ export const TicketModal = () => {
             />
           </label>
           <label>
-            <div>シンボル（4文字まで）</div>
-            <input
-              type='text'
-              placeholder='Type here'
-              className='input-bordered input w-full max-w-xs'
-            />
-          </label>
-          <label>
             <div>説明</div>
             <textarea
               type='text'
