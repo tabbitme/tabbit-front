@@ -1,6 +1,8 @@
 import { MenuBar } from '../../components/MenuBar';
+import { useCompanyTransfer } from './useCompanyTransfer';
 
 const CompanyTransfer: NextPage = () => {
+  const { transferTicket } = useCompanyTransfer();
   return (
     <>
       <MenuBar />
@@ -25,7 +27,12 @@ const CompanyTransfer: NextPage = () => {
           />
         </div>
         <div className='w-full'>
-          <button className='btn-primary btn w-full'>送る</button>
+          <button
+            className='btn-primary btn w-full'
+            onClick={() => transferTicket()}
+          >
+            送る
+          </button>
         </div>
       </div>
     </>
