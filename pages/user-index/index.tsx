@@ -15,12 +15,30 @@ const UserSignup: NextPage = () => {
             <div className='text-2xl font-bold'>TABBIT #1222</div>
           </div>
           <div className='grid grid-cols-3 gap-4 p-4'>
-            <TicketCard />
-            <TicketCard />
-            <TicketCard />
-            <TicketCard />
-            <TicketCard />
-            <TicketCard />
+            <TicketCard
+              imgSrc='/ticket-sample.png'
+              cardTitle='Resort X - ticket A'
+            />
+            <TicketCard
+              imgSrc='/ticket-sample.png'
+              cardTitle='Resort X - ticket A'
+            />
+            <TicketCard
+              imgSrc='/ticket-sample.png'
+              cardTitle='Resort X - ticket A'
+            />
+            <TicketCard
+              imgSrc='/ticket-sample.png'
+              cardTitle='Resort X - ticket A'
+            />
+            <TicketCard
+              imgSrc='/ticket-sample.png'
+              cardTitle='Resort X - ticket A'
+            />
+            <TicketCard
+              imgSrc='/ticket-sample.png'
+              cardTitle='Resort X - ticket A'
+            />
           </div>
         </div>
       </div>
