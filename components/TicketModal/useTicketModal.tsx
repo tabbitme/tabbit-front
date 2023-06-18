@@ -11,4 +11,5 @@ export const useTickeModal = () => {
     await makeTicket();
     openTicketCompleModal();
   };
+  return { clickHandler };
 };

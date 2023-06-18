@@ -1,6 +1,8 @@
 import { TicketCompleteModal } from '../TicketCompleteModal';
+import { useTickeModal } from './useTicketModal';
 
 export const TicketModal = () => {
+  const { clickHandler } = useTickeModal();
   return (
     <>
       <dialog id='my_modal_2' className='modal'>
@@ -44,10 +46,7 @@ export const TicketModal = () => {
             <img src='/image-uploader.png' alt='image' className='w-2/5' />
             <input class='hidden' type='file' />
           </label>
-          <button
-            className='btn-primary btn'
-            onClick={() => window.my_modal_3.showModal()}
-          >
+          <button className='btn-primary btn' onClick={() => clickHandler()}>
             作成する
           </button>
         </form>
