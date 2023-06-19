@@ -1,22 +1,9 @@
 import { NextPage } from 'next';
 
-import { Card } from '../../components/Card';
-import { MenuBar } from '../../components/MenuBar';
-import { useCompanyTop } from './useCompanyTop';
+import { CompanyTop } from '../../contents/CompanyTop';
 
-const CompanyTop: NextPage = () => {
-  const { ticketsArr } = useCompanyTop();
-  return (
-    <>
-      <MenuBar isImageDisplayed={true} />
-      <div className='m-auto mt-4 grid w-4/5 grid-cols-3 gap-4'>
-        {ticketsArr &&
-          ticketsArr.map((ticket, i) => (
-            <Card ticketImgSrc={ticket[0]} ticketTitle={ticket[1]} key={i} />
-          ))}
-      </div>
-    </>
-  );
+const CompanyTopPage: NextPage = () => {
+  return <CompanyTop />;
 };
 
-export default CompanyTop;
+export default CompanyTopPage;
