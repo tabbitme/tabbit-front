@@ -6,7 +6,7 @@ import { MenuBarUser } from '../../components/MenuBarUser';
 const UserSignup: NextPage = () => {
   return (
     <>
-      <MenuBarUser />
+      <MenuBarUser isSignUpButtonDisplayed={true} />
       <div className='m-auto flex w-full gap-8'>
         <div className='basis-1/2'>
           {/* eslint-disable-next-line @next/next/no-img-element */}

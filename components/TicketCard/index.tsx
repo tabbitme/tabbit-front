@@ -6,7 +6,7 @@ type TicketCardProps = {
 };
 export const TicketCard: FC<TicketCardProps> = ({ imgSrc, cardTitle }) => {
   return (
-    <div className='card relative w-72 bg-base-100 shadow-xl'>
+    <div className='card relative w-64 bg-base-100 shadow-xl'>
       <figure>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={imgSrc} alt='Ticket' />

@@ -9,8 +9,8 @@ export const UserIndex: FC = () => {
   console.log(ticketsArr);
   return (
     <>
-      <MenuBarUser />
-      <div>
+      <MenuBarUser isSignUpButtonDisplayed={false} />
+      <div className='bg-base-300'>
         <PassBox />
       </div>
     </>
