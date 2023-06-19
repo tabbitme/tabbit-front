@@ -14,16 +14,25 @@ export const MenuBar: FC = () => {
         </div>
         <div className='flex-none'>
           <ul className='menu menu-horizontal px-1'>
-            <li>
-              <Link href='/company-mypage'>マイページ</Link>
+            <li className='flex items-center justify-center'>
+              <div className='font-bold'>
+                <Link href='/company-mypage'>マイページ</Link>
+              </div>
             </li>
-            <li>
-              <div onClick={() => window.my_modal_2.showModal()}>
+            <li className='flex items-center justify-center'>
+              <div
+                onClick={() => window.my_modal_2.showModal()}
+                className='font-bold'
+              >
                 チケット作成
               </div>
             </li>
             <li>
-              <a>Wallet Connect</a>
+              <div>
+                <button className='btn-primary btn h-1/2 text-white'>
+                  Wallet Connect
+                </button>
+              </div>
             </li>
           </ul>
         </div>
