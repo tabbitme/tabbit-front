@@ -7,6 +7,11 @@ type MenuBarProp = {
   isImageDisplayed?: boolean;
 };
 
+interface Window {
+  my_modal_2: any;
+}
+declare var window: Window;
+
 export const MenuBar: FC<MenuBarProp> = ({ isImageDisplayed }) => {
   return (
     <div>
@@ -25,7 +30,7 @@ export const MenuBar: FC<MenuBarProp> = ({ isImageDisplayed }) => {
             </li>
             <li className='flex items-center justify-center'>
               <div
-                onClick={() => window.my_modal_2.showModal()}
+                onClick={() => window.my_modal_2!.showModal()}
                 className='font-bold'
               >
                 チケット作成
