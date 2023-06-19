@@ -1,19 +1,9 @@
-import { MenuBarUser } from '../../components/MenuBarUser';
-import { PassBox } from '../../components/PassBox';
-import { useUserIndex } from './useUserIndex';
+import { NextPage } from 'next';
 
-const UserSignup: NextPage = () => {
-  const { ticketsArr } = useUserIndex();
-  console.log(ticketsArr);
+import { UserIndex } from '../../contents/UserIndex';
 
-  return (
-    <>
-      <MenuBarUser />
-      <div>
-        <PassBox />
-      </div>
-    </>
-  );
+const UserIndexPage: NextPage = () => {
+  return <UserIndex />;
 };
 
-export default UserSignup;
+export default UserIndexPage;
