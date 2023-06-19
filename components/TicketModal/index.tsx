@@ -19,7 +19,6 @@ export const TicketModal = () => {
           <label>
             <div>説明</div>
             <textarea
-              type='text'
               placeholder='Type here'
               className='input-bordered input w-full max-w-xs'
             />
