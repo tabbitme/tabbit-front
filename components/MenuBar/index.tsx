@@ -49,13 +49,7 @@ export const MenuBar: FC<MenuBarProp> = ({ isImageDisplayed }) => {
       {isImageDisplayed && (
         <div className='w-screen'>
           {/*  eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src='/hero-img.png'
-            fill={true}
-            objectFit='contain'
-            alt='hero'
-            className='w-full'
-          />
+          <img src='/hero-img.png' alt='hero' className='w-full' />
         </div>
       )}
       <TicketModal />
