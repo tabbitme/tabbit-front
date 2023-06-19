@@ -1,6 +1,8 @@
 import type { NextPage } from 'next';
 import { useEffect, useState } from 'react';
 
+import { CompanyTop } from '../contents/CompanyTop';
+
 const Home: NextPage = () => {
   const [data, setData] = useState(null);
 
@@ -29,12 +31,13 @@ const Home: NextPage = () => {
     fetchData();
   }, []);
 
-  return (
-    <div>
-      <h1>Response from API</h1>
-      <pre>{JSON.stringify(data, null, 2)}</pre>
-    </div>
-  );
+  return <CompanyTop />;
+  // return (
+  //   <div>
+  //     <h1>Response from API</h1>
+  //     <pre>{JSON.stringify(data, null, 2)}</pre>
+  //   </div>
+  // );
 };
 
 export default Home;
