@@ -1,7 +1,9 @@
+import { FC } from 'react';
+
 import { MenuBar } from '../../components/MenuBar';
 import { useCompanyTransfer } from './useCompanyTransfer';
 
-export const CompanyTransfer: FC<> = ({ isImageDisplayed }) => {
+export const CompanyTransfer: FC = () => {
   const { transferTicket } = useCompanyTransfer();
   return (
     <>
