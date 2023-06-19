@@ -6,7 +6,7 @@ const CompanyTop: NextPage = () => {
   const { ticketsArr } = useCompanyTop();
   return (
     <>
-      <MenuBar />
+      <MenuBar isImageDisplayed={true} />
       <div className='m-auto mt-4 grid w-4/5 grid-cols-3 gap-4'>
         {ticketsArr &&
           ticketsArr.map((ticket, i) => (

@@ -3,7 +3,11 @@ import { FC } from 'react';
 
 import { TicketModal } from '../TicketModal';
 
-export const MenuBar: FC = () => {
+type MenuBarProp = {
+  isImageDisplayed?: boolean;
+};
+
+export const MenuBar: FC<MenuBarProp> = ({ isImageDisplayed }) => {
   return (
     <div>
       <div className='navbar bg-base-100'>
@@ -37,16 +41,18 @@ export const MenuBar: FC = () => {
           </ul>
         </div>
       </div>
-      <div className=' w-screen'>
-        {/*  eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src='/hero-img.png'
-          fill={true}
-          objectFit='contain'
-          alt='hero'
-          className='w-full'
-        />
-      </div>
+      {isImageDisplayed && (
+        <div className='w-screen'>
+          {/*  eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src='/hero-img.png'
+            fill={true}
+            objectFit='contain'
+            alt='hero'
+            className='w-full'
+          />
+        </div>
+      )}
       <TicketModal />
     </div>
   );
