@@ -1,21 +1,13 @@
 import { NextPage } from 'next';
 
-import { MenuBarUser } from '../../components/MenuBarUser';
-import { PassBox } from '../../components/PassBox';
+import { UserIndex } from '../../contents/UserIndex';
 import { useUserIndex } from './useUserIndex';
 
-const UserSignup: NextPage = () => {
+const UserIndexPage: NextPage = () => {
   const { ticketsArr } = useUserIndex();
   console.log(ticketsArr);
 
-  return (
-    <>
-      <MenuBarUser />
-      <div>
-        <PassBox />
-      </div>
-    </>
-  );
+  return <UserIndex />;
 };
 
-export default UserSignup;
+export default UserIndexPage;
