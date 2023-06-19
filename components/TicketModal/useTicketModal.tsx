@@ -1,6 +1,11 @@
+interface Window {
+  my_modal_3: any;
+}
+declare var window: Window;
+
 export const useTickeModal = () => {
   const openTicketCompleModal = () => {
-    window.my_modal_3.showModal();
+    window.my_modal_3!.showModal();
   };
 
   const makeTicket = async () => {

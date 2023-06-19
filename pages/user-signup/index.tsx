@@ -1,3 +1,4 @@
+import { NextPage } from 'next';
 import Link from 'next/link';
 
 import { MenuBarUser } from '../../components/MenuBarUser';
@@ -5,24 +6,32 @@ import { MenuBarUser } from '../../components/MenuBarUser';
 const UserSignup: NextPage = () => {
   return (
     <>
-      <MenuBarUser />
-      <div className='m-auto flex w-4/5 gap-4'>
-        <div>
+      <MenuBarUser isSignUpButtonDisplayed={true} />
+      <div className='m-auto flex w-full gap-8'>
+        <div className='basis-1/2'>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src='/sample-shoes.jpg' alt='shoes' />
+          <img src='/sea-mountain.png' alt='sea-mountain' className='w-full' />
         </div>
-        <div className='m-auto mt-4  flex w-4/5 flex-col gap-4'>
-          <h1 className='text-3xl font-bold'>アカウントを作成しよう</h1>
-          <p>届いたメールを使ってアカウントを作成しよう</p>
-          <input
-            type='text'
-            placeholder='メールアドレス'
-            className='input-bordered input w-full'
-          />
-          <button className='btn-primary btn'>アカウントを作成する</button>
-          <Link href='/' className='underline'>
-            既にアカウントを作成している方はこちら
-          </Link>
+        <div className='basis-1/2 '>
+          <div className='flex h-full items-center justify-center'>
+            <div className='m-auto flex w-4/5 flex-col gap-4'>
+              <h1 className='text-4xl font-bold'>アカウントを作成しよう</h1>
+              <p className='text-2xl'>
+                届いたメールを使ってアカウントを作成しよう
+              </p>
+              <input
+                type='text'
+                placeholder='メールアドレス'
+                className='input-bordered input w-3/5'
+              />
+              <button className='btn-primary btn w-3/5'>
+                アカウントを作成する
+              </button>
+              <Link href='/' className='underline'>
+                既にアカウントを作成している方はこちら
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </>
