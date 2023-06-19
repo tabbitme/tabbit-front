@@ -1,3 +1,5 @@
+import { NextPage } from 'next';
+
 import { Box } from '../../components/Box';
 import { BoxHead } from '../../components/BoxHead';
 import { MenuBar } from '../../components/MenuBar';

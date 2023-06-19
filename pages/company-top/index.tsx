@@ -1,3 +1,5 @@
+import { NextPage } from 'next';
+
 import { Card } from '../../components/Card';
 import { MenuBar } from '../../components/MenuBar';
 import { useCompanyTop } from './useCompanyTop';

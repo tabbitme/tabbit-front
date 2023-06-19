@@ -1,3 +1,5 @@
+import { NextPage } from 'next';
+
 import { MenuBarUser } from '../../components/MenuBarUser';
 import { PassBox } from '../../components/PassBox';
 import { useUserIndex } from './useUserIndex';

@@ -1,3 +1,5 @@
+import { NextPage } from 'next';
+
 import { MenuBar } from '../../components/MenuBar';
 import { useCompanyTransfer } from './useCompanyTransfer';
 
