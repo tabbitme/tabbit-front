@@ -12,27 +12,27 @@ export const PassBox = () => {
       </div>
       <div className='grid grid-cols-3 gap-4 pr-4 pt-8'>
         <TicketCard
-          imgSrc='/ticket-sample.png'
+          imgSrc='/ticket-img-sample.png'
           cardTitle='Resort X - ticket A'
         />
         <TicketCard
-          imgSrc='/ticket-sample.png'
+          imgSrc='/ticket-sample2.png'
           cardTitle='Resort X - ticket A'
         />
         <TicketCard
-          imgSrc='/ticket-sample.png'
+          imgSrc='/ticket-img-sample3.png'
           cardTitle='Resort X - ticket A'
         />
         <TicketCard
-          imgSrc='/ticket-sample.png'
+          imgSrc='/ticket-sample4.png'
           cardTitle='Resort X - ticket A'
         />
         <TicketCard
-          imgSrc='/ticket-sample.png'
+          imgSrc='/ticket-sampe5.png'
           cardTitle='Resort X - ticket A'
         />
         <TicketCard
-          imgSrc='/ticket-sample.png'
+          imgSrc='/ticket-sample4.png'
           cardTitle='Resort X - ticket A'
         />
       </div>
