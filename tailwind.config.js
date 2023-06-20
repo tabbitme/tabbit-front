@@ -6,7 +6,11 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        main: '#1F9F3A', // カスタム緑色を追加
+      },
+    },
   },
   plugins: [require('daisyui')],
   mode: 'jit',
