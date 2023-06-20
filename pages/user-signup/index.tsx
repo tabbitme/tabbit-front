@@ -18,7 +18,7 @@ const UserSignup: NextPage = () => {
   const [inputValue, setInputValue] = useState('');
   const router = useRouter();
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(() => e.target.value);
   };
 
