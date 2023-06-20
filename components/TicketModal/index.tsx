@@ -1,8 +1,8 @@
 import { TicketCompleteModal } from '../TicketCompleteModal';
-import { useTickeModal } from './useTicketModal';
+import { useTicketModal } from './useTicketModal';
 
 export const TicketModal = () => {
-  const { clickHandler } = useTickeModal();
+  const { clickHandler } = useTicketModal();
   return (
     <>
       <dialog id='my_modal_2' className='modal'>

@@ -13,7 +13,6 @@ const CompanyTop: NextPage = () => {
         <Box />
         <Box />
         <Box />
-        <Box />
       </div>
     </div>
   );

@@ -19,22 +19,6 @@ export const PassBox = () => {
           imgSrc='/ticket-sample.png'
           cardTitle='Resort X - ticket A'
         />
-        <TicketCard
-          imgSrc='/ticket-sample.png'
-          cardTitle='Resort X - ticket A'
-        />
-        <TicketCard
-          imgSrc='/ticket-sample.png'
-          cardTitle='Resort X - ticket A'
-        />
-        <TicketCard
-          imgSrc='/ticket-sample.png'
-          cardTitle='Resort X - ticket A'
-        />
-        <TicketCard
-          imgSrc='/ticket-sample.png'
-          cardTitle='Resort X - ticket A'
-        />
       </div>
     </div>
   );
