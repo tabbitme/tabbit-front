@@ -1,12 +1,36 @@
+import { useState } from 'react';
+
 import { TicketCompleteModal } from '../TicketCompleteModal';
-import { useTickeModal } from './useTicketModal';
+import { useTicketModal } from './useTicketModal';
 
 export const TicketModal = () => {
-  const { clickHandler } = useTickeModal();
+  const { clickHandler } = useTicketModal();
+
+  const [name, setName] = useState<string>('');
+  const [description, setDescription] = useState<string>('');
+  const [maxSupply, setMaxSupply] = useState<number>(0);
+  const [image, setImage] = useState<string>('default');
+
+  const handleNameChange = (event) => {
+    setName(event.target.value);
+  };
+
+  const handleDescriptionChange = (event) => {
+    setDescription(event.target.value);
+  };
+
+  const handleMaxSupplyChange = (event) => {
+    setMaxSupply(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    clickHandler(name, description, maxSupply);
+  };
+
   return (
     <>
       <dialog id='my_modal_2' className='modal'>
-        <form method='dialog' className='modal-box'>
+        <form method='dialog' className='modal-box' onSubmit={handleSubmit}>
           <h3 className='text-lg font-bold'>チケット作成</h3>
           <label>
             <div>名前</div>
@@ -14,6 +38,8 @@ export const TicketModal = () => {
               type='text'
               placeholder='Type here'
               className='input-bordered input w-full max-w-xs'
+              value={name}
+              onChange={handleNameChange}
             />
           </label>
           <label>
@@ -21,6 +47,8 @@ export const TicketModal = () => {
             <textarea
               placeholder='Type here'
               className='input-bordered input w-full max-w-xs'
+              value={description}
+              onChange={handleDescriptionChange}
             />
           </label>
           <label>
@@ -29,6 +57,8 @@ export const TicketModal = () => {
               type='text'
               placeholder='Type here'
               className='input-bordered input w-full max-w-xs'
+              value={maxSupply}
+              onChange={handleMaxSupplyChange}
             />
           </label>
           <label>
@@ -37,7 +67,7 @@ export const TicketModal = () => {
             <img src='/image-uploader.png' alt='image' className='w-2/5' />
             <input className='hidden' type='file' />
           </label>
-          <button className='btn-primary btn' onClick={() => clickHandler()}>
+          <button className='btn-primary btn' type='submit'>
             作成する
           </button>
         </form>
