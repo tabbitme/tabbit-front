@@ -6,7 +6,7 @@ import { MenuBar } from '../../components/MenuBar';
 
 const CompanyTop: NextPage = () => {
   return (
-    <>
+    <div className='bg-white'>
       <MenuBar isImageDisplayed={true} />
       <div className='m-auto mt-4  flex w-4/5 flex-col gap-4'>
         <BoxHead />
@@ -15,7 +15,7 @@ const CompanyTop: NextPage = () => {
         <Box />
         <Box />
       </div>
-    </>
+    </div>
   );
 };
 
