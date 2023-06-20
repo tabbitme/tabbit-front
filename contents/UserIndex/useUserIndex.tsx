@@ -1,10 +1,13 @@
 import { useRouter } from 'next/router';
 
+import { getOwnedNfts } from '../../utils';
+
 type Ticket = [string, string];
 
 export const useUserIndex = () => {
   const router = useRouter();
-  console.log(router.query.address); // UserのAAアドレスを取得
+  const addr = router.query.address as string; // UserのAAアドレスを取得
+  getOwnedNfts(addr);
 
   // ブロックチェーンと通信してPassとチケットの一覧情報を取得して、TicketArrとして返す
   const ticketsArr: Ticket[] = [
