@@ -18,7 +18,11 @@ export const MenuBar: FC<MenuBarProp> = ({ isImageDisplayed }) => {
     <div>
       <div className='navbar bg-white'>
         <div className='ml-4 flex-1'>
+        <Link href='/'>
+        
           <Image src='tabbit_logo.svg' alt='Logo' width={129} height={53} />
+         
+        </Link>
         </div>
         <div className='flex-none'>
           <ul className='menu menu-horizontal px-1'>
