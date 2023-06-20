@@ -12,8 +12,8 @@ export const Card: FC<CardProps> = ({ ticketImgSrc, ticketTitle }) => {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={ticketImgSrc} alt='Shoes' />
       </figure>
-      <div className='card-body'>
-        <h2 className='card-title'>{ticketTitle}</h2>
+      <div className='card-body bg-white'>
+        <h2 className='card-title text-black'>{ticketTitle}</h2>
       </div>
     </div>
   );
