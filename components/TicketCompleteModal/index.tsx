@@ -7,7 +7,7 @@ export const TicketCompleteModal = () => {
         <h3 className='text-xl font-bold'>Conglaturations!</h3>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src='/ticket-img-sample.png'
+          src='/ticket_12.png'
           alt='ticket'
           className='mx-auto mt-2 w-60 rounded-md'
         />
