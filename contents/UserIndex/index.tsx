@@ -10,7 +10,7 @@ export const UserIndex: FC = () => {
   return (
     <>
       <MenuBarUser isSignUpButtonDisplayed={false} />
-      <div className='bg-base-300'>
+      <div className='m-8 bg-base-300'>
         <PassBox />
       </div>
     </>

@@ -1,3 +1,5 @@
+import Image from 'next/image';
+import Link from 'next/link';
 import { FC } from 'react';
 
 type MenuBarUserProps = {
@@ -9,10 +11,10 @@ export const MenuBarUser: FC<MenuBarUserProps> = ({
   return (
     <div>
       <div className='navbar bg-base-100'>
-        <div className='flex-1'>
-          <a className='btn-ghost btn text-xl normal-case text-primary'>
-            TABBIT
-          </a>
+        <div className='ml-8 flex-1'>
+          <Link href='/'>
+            <Image src='tabbit_logo.svg' alt='Logo' width={129} height={53} />
+          </Link>
         </div>
         {isSignUpButtonDisplayed && (
           <div className='mr-8 flex-none'>

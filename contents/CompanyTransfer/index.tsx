@@ -12,7 +12,7 @@ export const CompanyTransfer: FC = () => {
       <div className='m-auto flex w-4/5 flex-col items-center justify-center gap-4'>
         <h1 className='text-2xl font-bold'>Transfer</h1>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src='/ticket-img-sample.png' alt='shoes' className='w-2/5' />
+        <img src='/ticket_12.png' alt='shoes' className='w-2/5' />
         <div className='w-full'>
           <p>Quantity</p>
           <input
