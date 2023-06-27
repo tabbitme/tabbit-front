@@ -2,7 +2,7 @@ import { TicketCard } from '../TicketCard';
 
 export const PassBox = () => {
   return (
-    <div className='m-auto flex w-10/12 justify-between gap-4 rounded-md border bg-neutral-content'>
+    <div className='m-auto mt-8 flex w-10/12 justify-between gap-4 rounded-md border bg-neutral-content'>
       <div className='flex basis-1/4 flex-col items-center pt-8'>
         <div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
