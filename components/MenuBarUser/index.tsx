@@ -11,7 +11,7 @@ export const MenuBarUser: FC<MenuBarUserProps> = ({
   return (
     <div>
       <div className='navbar bg-base-100'>
-        <div className='flex-1'>
+        <div className='ml-8 flex-1'>
           <Link href='/'>
             <Image src='tabbit_logo.svg' alt='Logo' width={129} height={53} />
           </Link>
